@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Batalla Naval</title>
+  <link href="main.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+  <main>
+    <h2>"Batalla Naval"</h2>
+    <button class="clean" onclick="window.location.reload();">nuevo juego</button>
+    <div id="canvas1" style="text-align:center;">
+      <canvas id="canvas" width="1800" height="630" style="border: 5px solid rgb(16, 13, 206);"></canvas>
+    </div>
+    <div id="score" style="text-align:center;">
+      <canvas id="scoreR" width="800" height="100" style="border: 5px solid rgb(16, 13, 206);"></canvas>
+    </div>
+
+
+    <div class="ataca">
+      
+      <form name="form" action="" method="get">
+        <label style="font-family: Arial; font-size: 20pt;">Letra: </label>
+        <input type="text" size="5" name="letras" >
+        <label style="font-family: Arial; font-size: 20pt;">Número: </label>
+        <input type="text" size="5" name="numeros">
+      </form>
+
+      <button class="btb2 btb" onclick="ataca()">Coordenada para atacar</button>
+    </div>
+  </main>
+
+  <script src="batallaNaval.js"></script>
+</body>
+
+</html>
